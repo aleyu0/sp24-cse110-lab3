@@ -8,7 +8,7 @@
   </head>
   <body>
     <header>
-      <h1>Group 13 Minute Notes</h1>
+      <h1><strong>Group 13 Minute Notes</strong></h1>
       <nav>
         <a href="https://canvas.ucsd.edu/courses/54609">CSE 110 Canvas</a>
         <a href="https://cse110-sp2024.slack.com/ssb/redirect">Slack</a>
@@ -20,7 +20,7 @@
             <sub>Tuesday, April 10, 2024 @ 6:10pm</sub>
             </div>
         <div>
-            <h2>Attendees:</h2>
+            <h2><b>Attendees:</b></h2>
         <ul>
             <li>Alessio Yu</li>
             <li>Maxim Podgore</li>
@@ -29,40 +29,94 @@
             <li>Jacqueline Huebert</li>
             </ul>
         </div>
+        <br>
+        <hr>
         <div>
-            <h2>Agenda:</h2>
-            <ul>
-                <li>Introductions</li>
-                <li>Making sure everyone is on Slack</li>
+            <h2><b>Agenda:</b></h2>
+            <ol>
+                <li><em>Introductions</em></li>
+                <li>Making sure everyone is on <em>Slack</em></li>
                 <li>Planned next meeting</li>
-            </ul>
-            <h2>From last time:</h2>
+            </ol>
+            <h2><b>From last time:</b></h2>
             <ul>
                 <li>Everyone was to join Slack</li>
             </ul>
-            <h2>Must discuss:</h2>
+            <h2><b>Must discuss:</b></h2>
             <ul>
                 <li>Introductions</li>
                 <li>Next meeting</li>
             </ul>
-            <h2>Comments:</h2>
+            <h2><b>Comments:</b></h2>
             <ul>
-                <li>Not all team members were present, introductions must be done next meeting</li>
-                <li>Next meeting - scheduled for Thursday, lecture and after lecture</li>
+                <li>Not all team members were present, <i>introductions must be done next meeting</i></li>
+                <li>Next meeting - <i>scheduled for Thursday</i>, lecture and after lecture</li>
             </ul>
         </div>
+        <hr>
         <div>
-            <h3>Misc.:</h3>
-            <p>To complete this lab assignment, I also need to a include a picture, video, and audio file. Below are some random items to fulfill the tasks. </p>
-            <img src="Geisel_Erik_Jepsen.jpg" alt="Geisel Library" style="width:min-content">
-            <video width="320" height="240" controls>
-                <source src="shortvideo.mp4" type="video/mp4">
-            </video>
-            <audio controls>
-                <source src="shortaudio.mp3" type="audio/mp3">
-            </audio>
+            <details>
+                <summary><b>Miscellaneous</b></summary>
+                <p>To complete this lab assignment, I also need to a include a picture, video, audio file, and a form. Below are some random items to fulfill the tasks. </p>
+                <img src="Geisel_Erik_Jepsen.jpg" alt="Geisel Library" style="width:min-content">
+                <video width="320" height="240" controls>
+                    <source src="shortvideo.mp4" type="video/mp4">
+                </video>
+                <audio controls>
+                    <source src="shortaudio.mp3" type="audio/mp3">
+                </audio>
+                <form>
+                    <fieldset>
+                        <legend>How was your day?</legend>
+                
+                        <label for="name">Your name:</label>
+                        <input type="text" id="name" name="name"><br><br>
+                
+                        <p>How was your mood today?</p>
+                        <input type="radio" id="happy" name="mood" value="happy">
+                        <label for="happy">Happy</label><br>
+                        <input type="radio" id="okay" name="mood" value="okay">
+                        <label for="okay">Okay</label><br>
+                        <input type="radio" id="sad" name="mood" value="sad">
+                        <label for="sad">Sad</label><br><br>
+                
+                        <p>What did you do today? (check all that apply)</p>
+                        <input type="checkbox" id="work" name="activities" value="work">
+                        <label for="work">Work</label><br>
+                        <input type="checkbox" id="exercise" name="activities" value="exercise">
+                        <label for="exercise">Exercise</label><br>
+                        <input type="checkbox" id="social" name="activities" value="social">
+                        <label for="social">Socialize</label><br><br>
+                
+                        <label for="location">Where were you today?</label>
+                        <input list="location" id="color" name="location">
+                        <datalist id="locations">
+                            <option value="Home">
+                            <option value="Office">
+                            <option value="School">
+                            <option value="Friend's">
+                            <option value="Other">
+                        </datalist><br><br>
+                
+                        <label for="feedback">Rate your day:</label>
+                        <select id="feedback" name="feedback">
+                            <option value="best">Best day of my life</option>
+                            <option value="good">Good</option>
+                            <option value="average">Average</option>
+                            <option value="bad">Bad</option>
+                            <option value="terrible">Terrible</option>
+                        </select><br><br>
+                
+                        <label for="comments">Other comments:</label><br>
+                        <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br><br>
+                
+                        <button type="submit">Enter</button>
+                    </fieldset>
+                </form>
+            </details>
         </div>
     </section>
+    <hr>
     <footer>
       <p>Alessio Yu - Group 13</p>
     </footer>
