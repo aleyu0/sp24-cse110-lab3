@@ -1,0 +1,258 @@
+/* import font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* reset page style*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* main body style */
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    padding-top: 100px;
+    padding-top: calc(100px + 5%);
+    margin: 5%;
+}
+
+/* header style */
+header {
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    padding: 3.5em;
+    background-color: #f2f2f2;
+    z-index: 1000;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* header heading one */
+header h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* nav bar format */
+nav {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+/* nav bar links */
+nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* nav bar links when active*/
+nav a.active {
+    border-bottom: 1.5px solid #333;
+}
+
+/* nav bar links when hovered*/
+nav a:hover {
+    color: #555;
+}
+
+/* main page */
+#mainContent {
+    padding: 20px;
+    background-color: #fff;
+}
+
+/* brief container */
+.brief {
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: calc(100px - 10%);
+    padding: 20px;
+    border-left: 1px solid #ccc;
+}
+
+/* brief headings */
+.brief h2{
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+
+}
+
+/* brief subheadings */
+.brief sub{
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+}
+
+/* brief lists */
+.brief li{
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+}
+
+/* notes container */
+.note {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    padding: 3% 3% 3% 6%;
+}
+
+/* notes h1 */
+.note h1, .note h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* notes h2 */
+.note h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* notes p */
+.note p {
+    font-size: 14px;
+    line-height: 1.5;
+
+}
+
+/* misc format */
+.misc {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #333;
+}
+
+/* misc dropdown title */
+.misc summary {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* misc content */
+.misc p{
+    margin-bottom: 10px;
+}
+
+/* gallery format*/
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* creates three columns */
+    grid-template-rows: auto; /* rows size to content */
+    gap: 10px; /* 20px gap between items */
+}
+
+/* gallery items */
+.misc img,
+.misc video,
+.misc audio{
+    max-width: 100%;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* form format */
+.form {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    padding: 3% 3% 3% 6%;
+}
+
+/* form items */
+.form > fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+.form legend {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form input[type="text"],
+.form input[type="radio"],
+.form input[type="checkbox"],
+.form datalist,
+.form select,
+.form textarea {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.form button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.form button[type="submit"]:hover {
+    background-color: #555;
+}
+
+/* footer format */
+footer {
+    position: fixed;
+    text-align: center;
+    width: 100%;
+    margin-top: 50px;
+    left: 0;
+    bottom: 0;
+    padding: 20px;
+    background-color: #f2f2f2;
+}
+
+/* footer text */
+footer p {
+    font-size: 14px;
+    color: #333;
+}
+
+/* spacing between notes */
+.note + .note {
+    margin-top: 20px;
+}
