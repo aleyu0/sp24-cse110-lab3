@@ -4,70 +4,76 @@
     <title>Group 13 Minute Notes</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="notesstyle.css">
+    <link rel="icon" href="media/favicon.ico">
   </head>
   <body>
     <header>
       <h1><strong>Group 13 Minute Notes</strong></h1>
       <nav>
+        <a href="index.html" style="text-decoration: underline;">Home</a>
         <a href="https://canvas.ucsd.edu/courses/54609">CSE 110 Canvas</a>
         <a href="https://cse110-sp2024.slack.com/ssb/redirect">Slack</a>
       </nav>
     </header>
     <section>
-        <div>
-            <sub>Quick Meet & Greet</sub>
-            <sub>Tuesday, April 10, 2024 @ 6:10pm</sub>
+        <div id="main">
+            <div class="brief">
+                <h2>Quick Meet & Greet</h2> 
+                <sub>Tuesday, April 10, 2024 @ 6:10pm</sub>
+                <br><br>
+                <h2><b>Attendees:</b></h2>
+                <li>Alessio Yu</li>
+                <li>Maxim Podgore</li>
+                <li>Venkata Komma</li>
+                <li>Zeyad Almoaigel</li>
+                <li>Jacqueline Huebert</li>
+                </ul>
             </div>
-        <div>
-            <h2><b>Attendees:</b></h2>
-        <ul>
-            <li>Alessio Yu</li>
-            <li>Maxim Podgore</li>
-            <li>Venkata Komma</li>
-            <li>Zeyad Almoaigel</li>
-            <li>Jacqueline Huebert</li>
-            </ul>
+            <br>
+            <div class="note">
+                <h2><b>Agenda:</b></h2>
+                <ol>
+                    <li><em>Introductions</em></li>
+                    <li>Making sure everyone is on <em>Slack</em></li>
+                    <li>Planned next meeting</li>
+                </ol>
+                <br>
+                <h2><b>From last time:</b></h2>
+                <ul>
+                    <li>Everyone was to join Slack</li>
+                </ul>
+                <br>
+                <h2><b>Must discuss:</b></h2>
+                <ul>
+                    <li>Introductions</li>
+                    <li>Next meeting</li>
+                </ul>
+                <br>
+                <h2><b>Comments:</b></h2>
+                <ul>
+                    <li>Not all team members were present, <i>introductions must be done next meeting</i></li>
+                    <li>Next meeting - <i>scheduled for Thursday</i>, lecture and after lecture</li>
+                </ul>
+            </div>
         </div>
         <br>
         <hr>
-        <div>
-            <h2><b>Agenda:</b></h2>
-            <ol>
-                <li><em>Introductions</em></li>
-                <li>Making sure everyone is on <em>Slack</em></li>
-                <li>Planned next meeting</li>
-            </ol>
-            <h2><b>From last time:</b></h2>
-            <ul>
-                <li>Everyone was to join Slack</li>
-            </ul>
-            <h2><b>Must discuss:</b></h2>
-            <ul>
-                <li>Introductions</li>
-                <li>Next meeting</li>
-            </ul>
-            <h2><b>Comments:</b></h2>
-            <ul>
-                <li>Not all team members were present, <i>introductions must be done next meeting</i></li>
-                <li>Next meeting - <i>scheduled for Thursday</i>, lecture and after lecture</li>
-            </ul>
-        </div>
-        <hr>
-        <div>
+        <div class="misc">
             <details>
                 <summary><b>Miscellaneous</b></summary>
                 <p>To complete this lab assignment, I also need to a include a picture, video, audio file, and a form. Below are some random items to fulfill the tasks. </p>
-                <img src="Geisel_Erik_Jepsen.jpg" alt="Geisel Library" width="320" height="240">
                 <br>
-                <video width="320" height="240" controls>
-                    <source src="shortvideo.mp4" type="video/mp4">
-                </video>
-                <br>
-                <audio controls>
-                    <source src="shortaudio.mp3" type="audio/mp3">
-                </audio>
-                <form>
+                <div class="gallery">
+                    <img src="media/Geisel_Erik_Jepsen.jpg" alt="Geisel Library" width="320" height="240">
+                    <video width="320" height="240" controls>
+                        <source src="media/teamintro.mp4" type="video/mp4">
+                    </video>
+                    <audio controls>
+                        <source src="media/shortaudio.mp3" type="audio/mp3">
+                    </audio>
+                </div>
+                <form class="form">
                     <fieldset>
                         <legend>How was your day?</legend>
                 
@@ -118,6 +124,7 @@
             </details>
         </div>
     </section>
+    <br>
     <hr>
     <footer>
       <p>Alessio Yu - Group 13</p>
